@@ -1,0 +1,106 @@
+body{
+    overflow: hidden;
+}
+/* The device with borders */
+.smartphone {
+    position: relative;
+    width: 360px;
+    height: 640px;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+  }
+  
+  /* The horizontal line on the top of the device */
+  .smartphone:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+  }
+  
+  /* The circle on the bottom of the device */
+  .smartphone:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+  }
+  
+  /* The screen (or content) of the device */
+  .smartphone .content {
+    width: 360px;
+    height: 640px;
+    background: white;
+    overflow: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+
+  }
+
+
+  h1{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    border-radius: 1rem;
+    width: 70%;
+    margin: 2rem 2rem 2rem 3rem;
+    background-color: black;
+    color: white;
+  }
+
+  .input{
+    background: #272222;
+    color: white;
+    height: 4.5%;
+    margin: 2rem 1rem .5rem 2rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+  }
+
+  .input_btn{
+    background-color: rgb(119, 50, 119);
+    height: 2rem;
+    width: 5.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+
+  .input_btn:hover{
+    background-color: aqua;
+  }
+
+  li{
+    font-size: 1.5rem;
+    margin: 0 2rem .5rem 2rem;
+  }
+
+  .delete{
+    background-color: rgb(140, 140, 229);
+    margin: 0 1rem .5rem 2rem;
+    height: 1.4rem;
+    width: 4rem;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+
+  .delete:hover{
+    background-color: #f50202;
+    color: white;
+    
+  }
